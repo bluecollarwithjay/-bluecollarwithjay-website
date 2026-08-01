@@ -1,1 +1,8 @@
-const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.main-nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});document.querySelectorAll('.main-nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();const counters=document.querySelectorAll('[data-count]');const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target,target=Number(el.dataset.count);let n=0;const step=Math.max(1,Math.ceil(target/30));const timer=setInterval(()=>{n=Math.min(target,n+step);el.textContent=n+'+';if(n===target)clearInterval(timer)},40);observer.unobserve(el)})},{threshold:.5});counters.forEach(c=>observer.observe(c));
+
+const menuBtn=document.querySelector('.menu-btn');
+const nav=document.querySelector('nav');
+if(menuBtn){menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
+const counters=document.querySelectorAll('[data-count]');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target,target=Number(el.dataset.count),duration=1100,start=performance.now();function tick(now){const p=Math.min((now-start)/duration,1);el.textContent=Math.floor(target*p);if(p<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);observer.unobserve(el);});},{threshold:.4});
+counters.forEach(c=>observer.observe(c));
