@@ -1,17 +1,23 @@
 
-BLUE COLLAR WITH JAY — MASTERPIECE WEBSITE PACKAGE
+BLUE COLLAR WITH JAY V3
 
-Upload the CONTENTS of this folder to the root of your GitHub repository:
-- index.html
-- spotlights.html
-- podcast.html
-- merch.html
-- nextgen.html
-- sponsors.html
-- nominate.html
-- styles.css
-- script.js
-- assets folder
+NEW IN THIS VERSION
+- Expanded homepage
+- About Jay page
+- Events page
+- Latest spotlight cards
+- Newsletter signup form
+- Social media section
+- Stronger calls to action
+- Improved mobile layout
+- Existing Podcast, Merch, NextGen, Sponsors, and Nomination pages
 
-Do not upload the outer folder itself.
-Netlify should publish automatically after the GitHub commit.
+UPLOAD
+1. Extract the ZIP.
+2. Open the extracted folder.
+3. Select everything inside.
+4. Upload those contents to the root of the GitHub repository.
+5. Commit changes.
+6. Netlify should publish automatically.
+
+Replace placeholder social links and temporary graphics with final links and original images.
