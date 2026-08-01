@@ -28,3 +28,5 @@ UPLOAD
 IMPORTANT
 Do not upload the outer folder itself.
 Replace # social and podcast links with final URLs when available.
+
+V6 adds a larger logo, entrance animations, featured video area, partner showcase, and premium spacing.

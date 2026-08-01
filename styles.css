@@ -93,3 +93,88 @@ footer p,footer a{color:#aeb7c5}
 @media(max-width:650px){
  .topline{display:none}.hero{min-height:auto}.hero-grid{padding:70px 0}.grid3,.merch,.social,.form2,.footer-grid{grid-template-columns:1fr}.head,.cta{align-items:flex-start;flex-direction:column}.event{grid-template-columns:1fr}.feature-copy{padding:28px}.feature-visual{min-height:330px}.stats-grid{grid-template-columns:1fr 1fr}section{padding:68px 0}
 }
+
+/* V6 premium upgrades */
+.brand img{
+  width:76px;
+  height:76px;
+  border-radius:16px;
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
+}
+.nav{height:96px}
+.hero-grid{padding:110px 0}
+.hero-logo{
+  animation:floatIn 1s ease both;
+  box-shadow:0 35px 90px rgba(0,0,0,.6);
+}
+.hero-logo img{
+  filter:contrast(1.05) saturate(1.08);
+}
+.hero h1,.hero p,.hero .actions,.hero .kicker{
+  animation:riseIn .9s ease both;
+}
+.hero p{animation-delay:.12s}
+.hero .actions{animation-delay:.22s}
+.card,.feature-story,.product,.event,.social a{
+  animation:fadeUp .8s ease both;
+}
+.video-feature{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:28px;
+  align-items:center;
+  padding:32px;
+  border:1px solid var(--line);
+  background:linear-gradient(135deg,#101825,#0b1018);
+  border-radius:28px;
+}
+.video-screen{
+  aspect-ratio:16/9;
+  border-radius:20px;
+  display:grid;
+  place-items:center;
+  font-size:5rem;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(135,185,233,.2),transparent 25%),
+    linear-gradient(135deg,#182434,#0c121b);
+  border:1px solid #354255;
+  box-shadow:inset 0 0 60px rgba(0,0,0,.35);
+}
+.partner-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.partner{
+  min-height:120px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  display:grid;
+  place-items:center;
+  background:#111722;
+  color:#c7cfda;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+@keyframes riseIn{
+  from{opacity:0;transform:translateY(28px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(18px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes floatIn{
+  from{opacity:0;transform:translateY(24px) scale(.96) rotate(1.5deg)}
+  to{opacity:1;transform:translateY(0) scale(1) rotate(1.5deg)}
+}
+@media(max-width:950px){
+  .video-feature{grid-template-columns:1fr}
+  .partner-row{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .brand img{width:62px;height:62px}
+  .nav{height:84px}
+  .partner-row{grid-template-columns:1fr}
+}
