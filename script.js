@@ -1,15 +1,10 @@
 
-const menu=document.querySelector('.menu');
-const nav=document.querySelector('nav');
-if(menu){menu.addEventListener('click',()=>nav.classList.toggle('open'));}
-document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
-const counters=document.querySelectorAll('[data-count]');
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(!entry.isIntersecting)return;
-    const el=entry.target,target=Number(el.dataset.count),start=performance.now(),duration=1200;
-    function tick(now){const p=Math.min((now-start)/duration,1);el.textContent=Math.floor(target*p);if(p<1)requestAnimationFrame(tick);}
-    requestAnimationFrame(tick);observer.unobserve(el);
-  });
-},{threshold:.4});
-counters.forEach(c=>observer.observe(c));
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('nav');
+if(menu && nav){menu.addEventListener('click',()=>nav.classList.toggle('open'));}
+document.querySelectorAll('[data-count]').forEach(el=>{
+  const target=Number(el.dataset.count||0); let n=0; const step=Math.max(1,Math.ceil(target/35));
+  const tick=()=>{n=Math.min(target,n+step);el.textContent=n+(target>=100?'+':'');if(n<target)requestAnimationFrame(tick)};
+  const obs=new IntersectionObserver(entries=>{if(entries[0].isIntersecting){tick();obs.disconnect();}});
+  obs.observe(el);
+});
