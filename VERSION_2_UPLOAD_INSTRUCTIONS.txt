@@ -1,0 +1,20 @@
+BLUE COLLAR WITH JAY VERSION 2.0 — FOUNDERS EDITION
+
+This release removes the laptop screenshot placeholders and adds:
+- Redesigned homepage
+- Syms Contractors feature
+- Will Goodman feature
+- The Cottages on Georgia Road feature
+- Officer Lane A. Harper Community Builder feature
+- Founder's Message page
+- Wall of Respect
+- Updated navigation and archives
+
+UPLOAD:
+1. Unzip this package.
+2. Open the existing GitHub repository.
+3. Upload ALL files and the complete assets folder to the main/root level.
+4. Replace matching files.
+5. Commit directly to main with: Launch Blue Collar With Jay Version 2.0
+6. Wait for Netlify to redeploy.
+7. Refresh the website using Ctrl+F5 on Windows or clear the browser cache if old images remain.

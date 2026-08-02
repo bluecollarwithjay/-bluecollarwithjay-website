@@ -64,3 +64,26 @@ footer{padding:55px 0 28px;background:#05080d;border-top:1px solid var(--line)}.
 .syms-hero{min-height:560px;display:flex;align-items:end;background:linear-gradient(90deg,rgba(4,7,12,.97),rgba(4,7,12,.54)),url('assets/syms-company-profile.webp') center/cover no-repeat}
 .syms-hero .wrap{padding-bottom:30px}.lead{font-size:1.35rem;max-width:760px;color:#d5dee9}
 blockquote{margin:24px 0 0;padding:20px 24px;border-left:5px solid var(--blue);background:#0b1522;color:#dce8f5;font-size:1.08rem}
+
+.v2-hero{background:radial-gradient(circle at 75% 30%,#123f73 0,transparent 34%),linear-gradient(135deg,#04070c,#0b1522)}
+.lane-hero{min-height:540px;background:linear-gradient(90deg,rgba(5,8,13,.98),rgba(5,8,13,.48)),url('assets/lane-harper-community-spotlight.jpeg') center/cover no-repeat}
+.will-hero{background:radial-gradient(circle at 80% 25%,#0a4f91 0,transparent 38%),#080d15}
+.cottages-hero{background:radial-gradient(circle at 75% 20%,#20394f 0,transparent 42%),#081018}
+.founder-hero{background:linear-gradient(90deg,#060a10,#0b315d)}
+.editorial-cover{min-height:500px;display:flex;flex-direction:column;justify-content:end;padding:40px;background:linear-gradient(145deg,#06101c,#083f78);color:#fff}
+.editorial-cover span,.editorial-mini span{color:#5fb2ff;font-size:.8rem;font-weight:900;letter-spacing:.16em}
+.editorial-cover strong{font:clamp(3.5rem,7vw,6rem)/.92 Impact;text-transform:uppercase}
+.editorial-cover small{font-size:1.1rem;color:#ced9e7;margin-top:12px}
+.cottages-cover{background:linear-gradient(145deg,#0d2437,#0b5e7c)}
+.editorial-mini{height:250px;padding:26px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#06101c,#0b4d88)}
+.editorial-mini strong{font:2.3rem/1 Impact;text-transform:uppercase;margin-top:10px}
+.cottages-mini{background:linear-gradient(145deg,#112537,#146a78)}
+.no-photo{overflow:hidden}
+.recognition-seal{aspect-ratio:1;border-radius:50%;display:grid;place-content:center;text-align:center;border:8px double #228df1;background:radial-gradient(circle,#10243a,#05090f);box-shadow:0 25px 70px rgba(0,0,0,.4)}
+.recognition-seal span{font:5rem Impact;color:#218cf0}.recognition-seal strong{font:1.5rem Impact;text-transform:uppercase}.recognition-seal small{color:#aeb9c7}
+.respect-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.respect-card{padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#101925,#091019);transition:.2s}
+.respect-card:hover{transform:translateY(-4px);border-color:#288eef}
+.respect-card span{display:block;color:#4fa6ff;text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:900}
+.respect-card strong{display:block;font:2rem Impact;margin:8px 0}.respect-card small{color:#aeb8c6}
+@media(max-width:900px){.respect-grid{grid-template-columns:1fr}.recognition-seal{max-width:420px}}
