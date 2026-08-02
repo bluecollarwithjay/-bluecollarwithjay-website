@@ -1,0 +1,7 @@
+UPLOAD ALL FILES IN THIS PACKAGE TO THE MAIN LEVEL OF YOUR EXISTING GITHUB REPOSITORY.
+Replace files with the same names, commit to main, and allow Netlify to redeploy.
+
+New live page:
+syms-contractors.html
+
+The homepage and Spotlights archive now link to the Syms Contractors feature.
